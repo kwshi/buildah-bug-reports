@@ -1,5 +1,5 @@
 STEP 1: FROM voidlinux/voidlinux
-STEP 2: RUN xbps-install -Suy xbps 
+STEP 2: RUN xbps-install -Suy xbps
 --> Using cache 300ec119bca7d96d74279a6b800e77d1bf0dfab11739ef7e562f29a2a33ac8c9
 --> 300ec119bca
 STEP 3: RUN xbps-install -y base-devel opam
@@ -25,17 +25,14 @@ The following actions will be performed:
 ===== 4 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-Processing  1/4: [csexp.1.3.2: dl]
-Processing  2/4: [csexp.1.3.2: dl] [dune.2.8.2: dl]
-Processing  3/4: [csexp.1.3.2: dl] [dune.2.8.2: dl] [dune-configurator.2.8.2: dl]
 + /usr/sbin/curl "--write-out" "%{http_code}\\n" "--retry" "3" "--retry-delay" "2" "--user-agent" "opam/2.0.7" "-L" "-o" "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp.part" "https://opam.ocaml.org/cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a"
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9775  100  9775    0     0  32049      0 --:--:-- --:--:-- --:--:-- 32049
+100  9775  100  9775    0     0  22523      0 --:--:-- --:--:-- --:--:-- 22471
 - 200
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9775  100  9775    0     0  32049      0 --:--:-- --:--:-- --:--:-- 32049
+100  9775  100  9775    0     0  22523      0 --:--:-- --:--:-- --:--:-- 22471
 - 200
 + /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp.part" "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp"
 + /usr/sbin/openssl "sha256" "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp"
@@ -44,35 +41,32 @@ Processing  3/4: [csexp.1.3.2: dl] [dune.2.8.2: dl] [dune-configurator.2.8.2: dl
 - SHA512(/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp)= ff1bd6a7c6bb3a73ca9ab0506c9ec1f357657deaa9ecc7eb32955817d9b0f266d976af3e2b8fc34c621cb0caf1fde55f9a609dd184e2054f500bf09afeb83026
 + /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a.tmp" "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a"
 [csexp.1.3.2] downloaded from cache at https://opam.ocaml.org/cache
-Processing  3/4: [dune.2.8.2: dl] [dune-configurator.2.8.2: dl]
 + /usr/sbin/tar "xfj" "/home/opam/.opam/download-cache/sha256/f2/f21f427b277f07e8bfd050e00c640a5893c1bf4b689147640fa383255dcf1c4a" "-C" "/tmp/opam-7-d8a4ae"
 + /usr/sbin/cp "-PRp" "/tmp/opam-7-d8a4ae/csexp-1.3.2/CHANGES.md" "/tmp/opam-7-d8a4ae/csexp-1.3.2/LICENSE.md" "/tmp/opam-7-d8a4ae/csexp-1.3.2/Makefile" "/tmp/opam-7-d8a4ae/csexp-1.3.2/README.md" "/tmp/opam-7-d8a4ae/csexp-1.3.2/bench" "/tmp/opam-7-d8a4ae/csexp-1.3.2/csexp.opam" "/tmp/opam-7-d8a4ae/csexp-1.3.2/csexp.opam.template" "/tmp/opam-7-d8a4ae/csexp-1.3.2/dune-project" "/tmp/opam-7-d8a4ae/csexp-1.3.2/dune-workspace.dev" "/tmp/opam-7-d8a4ae/csexp-1.3.2/src" "/tmp/opam-7-d8a4ae/csexp-1.3.2/test" "/home/opam/.opam/default/.opam-switch/sources/csexp.1.3.2"
-Processing  4/4: [dune.2.8.2: dl] [dune-configurator.2.8.2: dl] [result.1.5: dl]
++ sleep "1"
 + /usr/sbin/curl "--write-out" "%{http_code}\\n" "--retry" "3" "--retry-delay" "2" "--user-agent" "opam/2.0.7" "-L" "-o" "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b.tmp.part" "https://opam.ocaml.org/cache/md5/1b/1b82dec78849680b49ae9a8a365b831b"
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2174  100  2174    0     0   5188      0 --:--:-- --:--:-- --:--:--  5188
+100  2174  100  2174    0     0   4986      0 --:--:-- --:--:-- --:--:--  4986
 - 200
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2174  100  2174    0     0   5188      0 --:--:-- --:--:-- --:--:--  5188
+100  2174  100  2174    0     0   4986      0 --:--:-- --:--:-- --:--:--  4986
 - 200
 + /usr/sbin/mv "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b.tmp.part" "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b.tmp"
 + /usr/sbin/mv "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b.tmp" "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b"
 [result.1.5] downloaded from cache at https://opam.ocaml.org/cache
-Processing  4/4: [dune.2.8.2: dl] [dune-configurator.2.8.2: dl]
-+ sleep "1"
 + /usr/sbin/tar "xfj" "/home/opam/.opam/download-cache/md5/1b/1b82dec78849680b49ae9a8a365b831b" "-C" "/tmp/opam-7-60459a"
 + /usr/sbin/cp "-PRp" "/tmp/opam-7-60459a/result-1.5/CHANGES.md" "/tmp/opam-7-60459a/result-1.5/LICENSE.md" "/tmp/opam-7-60459a/result-1.5/Makefile" "/tmp/opam-7-60459a/result-1.5/README.md" "/tmp/opam-7-60459a/result-1.5/dune" "/tmp/opam-7-60459a/result-1.5/dune-project" "/tmp/opam-7-60459a/result-1.5/result-as-alias-4.08.ml" "/tmp/opam-7-60459a/result-1.5/result-as-alias.ml" "/tmp/opam-7-60459a/result-1.5/result-as-newtype.ml" "/tmp/opam-7-60459a/result-1.5/result.opam" "/tmp/opam-7-60459a/result-1.5/which_result.ml" "/home/opam/.opam/default/.opam-switch/sources/result.1.5"
 + sleep "1"
 + /usr/sbin/curl "--write-out" "%{http_code}\\n" "--retry" "3" "--retry-delay" "2" "--user-agent" "opam/2.0.7" "-L" "-o" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp.part" "https://opam.ocaml.org/cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e"
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 1071k   11  127k    0     0   142k      0  0:00:07 --:--:--  0:00:07  142k 44 1071k   44  479k    0     0   246k      0  0:00:04  0:00:01  0:00:03  246k 95 1071k   95 1023k    0     0   349k      0  0:00:03  0:00:02  0:00:01  349k100 1071k  100 1071k    0     0   360k      0  0:00:02  0:00:02 --:--:--  360k
+100 1071k  100 1071k    0     0   375k      0  0:00:02  0:00:02 --:--:--  375k
 - 200
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 1071k   11  127k    0     0   142k      0  0:00:07 --:--:--  0:00:07  142k 44 1071k   44  479k    0     0   246k      0  0:00:04  0:00:01  0:00:03  246k 95 1071k   95 1023k    0     0   349k      0  0:00:03  0:00:02  0:00:01  349k100 1071k  100 1071k    0     0   360k      0  0:00:02  0:00:02 --:--:--  360k
+100 1071k  100 1071k    0     0   375k      0  0:00:02  0:00:02 --:--:--  375k
 - 200
 + /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp.part" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
 + /usr/sbin/openssl "sha256" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
@@ -81,165 +75,26 @@ Processing  4/4: [dune.2.8.2: dl] [dune-configurator.2.8.2: dl]
 - SHA512(/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp)= d3cca73f5a72440273f7b4e3934dfa7e89fcb64710f3c734d2583123f5d9f3e573f0ab96a4892b2f11313038da6b4e2c614951199ffef0a3f12669d729b25376
 + /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e"
 [dune.2.8.2] downloaded from cache at https://opam.ocaml.org/cache
-Processing  4/4: [dune-configurator.2.8.2: dl]
 + sleep "1"
 + /usr/sbin/tar "xfj" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e" "-C" "/tmp/opam-7-6aa130"
 + /usr/sbin/cp "-PRp" "/tmp/opam-7-6aa130/dune-2.8.2/CHANGES.md" "/tmp/opam-7-6aa130/dune-2.8.2/CONTRIBUTING.md" "/tmp/opam-7-6aa130/dune-2.8.2/HACKING.md" "/tmp/opam-7-6aa130/dune-2.8.2/LICENSE.md" "/tmp/opam-7-6aa130/dune-2.8.2/MIGRATION.md" "/tmp/opam-7-6aa130/dune-2.8.2/Makefile" "/tmp/opam-7-6aa130/dune-2.8.2/README.md" "/tmp/opam-7-6aa130/dune-2.8.2/bench" "/tmp/opam-7-6aa130/dune-2.8.2/bin" "/tmp/opam-7-6aa130/dune-2.8.2/boot" "/tmp/opam-7-6aa130/dune-2.8.2/bootstrap.ml" "/tmp/opam-7-6aa130/dune-2.8.2/configure" "/tmp/opam-7-6aa130/dune-2.8.2/configure.ml" "/tmp/opam-7-6aa130/dune-2.8.2/doc" "/tmp/opam-7-6aa130/dune-2.8.2/dune" "/tmp/opam-7-6aa130/dune-2.8.2/dune-action-plugin.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-build-info.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-configurator.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-glob.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-private-libs.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-private-libs.opam.template" "/tmp/opam-7-6aa130/dune-2.8.2/dune-project" "/tmp/opam-7-6aa130/dune-2.8.2/dune-site.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune-workspace.dev" "/tmp/opam-7-6aa130/dune-2.8.2/dune.opam" "/tmp/opam-7-6aa130/dune-2.8.2/dune.opam.template" "/tmp/opam-7-6aa130/dune-2.8.2/editor-integration" "/tmp/opam-7-6aa130/dune-2.8.2/example" "/tmp/opam-7-6aa130/dune-2.8.2/otherlibs" "/tmp/opam-7-6aa130/dune-2.8.2/perf.sh" "/tmp/opam-7-6aa130/dune-2.8.2/plugin" "/tmp/opam-7-6aa130/dune-2.8.2/src" "/tmp/opam-7-6aa130/dune-2.8.2/test" "/tmp/opam-7-6aa130/dune-2.8.2/vendor" "/home/opam/.opam/default/.opam-switch/sources/dune.2.8.2"
 + /usr/sbin/curl "--write-out" "%{http_code}\\n" "--retry" "3" "--retry-delay" "2" "--user-agent" "opam/2.0.7" "-L" "-o" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp.part" "https://opam.ocaml.org/cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e"
 -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 -                                  Dload  Upload   Total   Spent    Left  Speed
--   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 14 1071k   14  159k    0     0   194k      0  0:00:05 --:--:--  0:00:05  194k 59 1071k   59  639k    0     0   354k      0  0:00:03  0:00:01  0:00:02  354k
-- 100 1071k  100 1071k    0     0   437k      0  0:00:02  0:00:02 --:--:--  437k
+ 16 1071k   16  175k    0     0   141k      0  0:00:07  0:00:01  0:00:06  141k
+ 56 1071k   56  607k    0     0   267k      0  0:00:04  0:00:02  0:00:02  266k
+100 1071k  100 1071k    0     0   320k      0  0:00:03  0:00:03 --:--:--  320k
 - 200
 + /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp.part" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
-+ /usr/sbin/openssl "sha256" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
-- SHA256(/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp)= e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e
-+ /usr/sbin/openssl "sha512" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
-- SHA512(/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp)= d3cca73f5a72440273f7b4e3934dfa7e89fcb64710f3c734d2583123f5d9f3e573f0ab96a4892b2f11313038da6b4e2c614951199ffef0a3f12669d729b25376
-+ /usr/sbin/mv "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e"
-[dune-configurator.2.8.2] downloaded from cache at https://opam.ocaml.org/cache
-Processing  4/4:
-+ /usr/sbin/tar "xfj" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e" "-C" "/tmp/opam-7-a4abd5"
-+ /usr/sbin/cp "-PRp" "/tmp/opam-7-a4abd5/dune-2.8.2/CHANGES.md" "/tmp/opam-7-a4abd5/dune-2.8.2/CONTRIBUTING.md" "/tmp/opam-7-a4abd5/dune-2.8.2/HACKING.md" "/tmp/opam-7-a4abd5/dune-2.8.2/LICENSE.md" "/tmp/opam-7-a4abd5/dune-2.8.2/MIGRATION.md" "/tmp/opam-7-a4abd5/dune-2.8.2/Makefile" "/tmp/opam-7-a4abd5/dune-2.8.2/README.md" "/tmp/opam-7-a4abd5/dune-2.8.2/bench" "/tmp/opam-7-a4abd5/dune-2.8.2/bin" "/tmp/opam-7-a4abd5/dune-2.8.2/boot" "/tmp/opam-7-a4abd5/dune-2.8.2/bootstrap.ml" "/tmp/opam-7-a4abd5/dune-2.8.2/configure" "/tmp/opam-7-a4abd5/dune-2.8.2/configure.ml" "/tmp/opam-7-a4abd5/dune-2.8.2/doc" "/tmp/opam-7-a4abd5/dune-2.8.2/dune" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-action-plugin.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-build-info.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-configurator.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-glob.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-private-libs.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-private-libs.opam.template" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-project" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-site.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune-workspace.dev" "/tmp/opam-7-a4abd5/dune-2.8.2/dune.opam" "/tmp/opam-7-a4abd5/dune-2.8.2/dune.opam.template" "/tmp/opam-7-a4abd5/dune-2.8.2/editor-integration" "/tmp/opam-7-a4abd5/dune-2.8.2/example" "/tmp/opam-7-a4abd5/dune-2.8.2/otherlibs" "/tmp/opam-7-a4abd5/dune-2.8.2/perf.sh" "/tmp/opam-7-a4abd5/dune-2.8.2/plugin" "/tmp/opam-7-a4abd5/dune-2.8.2/src" "/tmp/opam-7-a4abd5/dune-2.8.2/test" "/tmp/opam-7-a4abd5/dune-2.8.2/vendor" "/home/opam/.opam/default/.opam-switch/sources/dune-configurator.2.8.2"
+- /usr/sbin/mv: replace '/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp', overriding mode 0007 (------rwx)?
 
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+ /usr/sbin/cp "-PRp" "/home/opam/.opam/default/.opam-switch/sources/dune.2.8.2" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2"
-Processing  1/8: [dune: ocaml bootstrap.ml]
-+ /home/opam/.opam/default/bin/ocaml "bootstrap.ml" "-j" "11" (CWD=/home/opam/.opam/default/.opam-switch/build/dune.2.8.2)
-- ocamlc -output-complete-exe -w -24 -g -o .duneboot.exe -I boot unix.cma boot/libs.ml boot/duneboot.ml
-- ./.duneboot.exe -j 11
-- 
-Processing  1/8: [dune: ./dune.exe build]
-+ /home/opam/.opam/default/.opam-switch/build/dune.2.8.2/./dune.exe "build" "-p" "dune" "--profile" "dune-bootstrap" "-j" "11" (CWD=/home/opam/.opam/default/.opam-switch/build/dune.2.8.2)
--> compiled  dune.2.8.2
-+ /usr/sbin/install "-m" "0755" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/bin/dune" "/home/opam/.opam/default/bin/dune"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/lib/dune/META" "/home/opam/.opam/default/lib/dune/META"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/lib/dune/dune-package" "/home/opam/.opam/default/lib/dune/dune-package"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/lib/dune/opam" "/home/opam/.opam/default/lib/dune/opam"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-build.1" "/home/opam/.opam/default/man/man1/dune-build.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-cache.1" "/home/opam/.opam/default/man/man1/dune-cache.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-clean.1" "/home/opam/.opam/default/man/man1/dune-clean.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-compute.1" "/home/opam/.opam/default/man/man1/dune-compute.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-describe.1" "/home/opam/.opam/default/man/man1/dune-describe.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-exec.1" "/home/opam/.opam/default/man/man1/dune-exec.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-external-lib-deps.1" "/home/opam/.opam/default/man/man1/dune-external-lib-deps.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-format-dune-file.1" "/home/opam/.opam/default/man/man1/dune-format-dune-file.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-help.1" "/home/opam/.opam/default/man/man1/dune-help.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-init.1" "/home/opam/.opam/default/man/man1/dune-init.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-install.1" "/home/opam/.opam/default/man/man1/dune-install.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-installed-libraries.1" "/home/opam/.opam/default/man/man1/dune-installed-libraries.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-ocaml-merlin.1" "/home/opam/.opam/default/man/man1/dune-ocaml-merlin.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-printenv.1" "/home/opam/.opam/default/man/man1/dune-printenv.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-promote.1" "/home/opam/.opam/default/man/man1/dune-promote.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-rules.1" "/home/opam/.opam/default/man/man1/dune-rules.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-runtest.1" "/home/opam/.opam/default/man/man1/dune-runtest.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-subst.1" "/home/opam/.opam/default/man/man1/dune-subst.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-test.1" "/home/opam/.opam/default/man/man1/dune-test.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-top.1" "/home/opam/.opam/default/man/man1/dune-top.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-uninstall.1" "/home/opam/.opam/default/man/man1/dune-uninstall.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-upgrade.1" "/home/opam/.opam/default/man/man1/dune-upgrade.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune-utop.1" "/home/opam/.opam/default/man/man1/dune-utop.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man1/dune.1" "/home/opam/.opam/default/man/man1/dune.1"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/man/man5/dune-config.5" "/home/opam/.opam/default/man/man5/dune-config.5"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/share/emacs/site-lisp/dune-flymake.el" "/home/opam/.opam/default/share/emacs/site-lisp/dune-flymake.el"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/share/emacs/site-lisp/dune.el" "/home/opam/.opam/default/share/emacs/site-lisp/dune.el"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/doc/dune/CHANGES.md" "/home/opam/.opam/default/doc/dune/CHANGES.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/doc/dune/LICENSE.md" "/home/opam/.opam/default/doc/dune/LICENSE.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune.2.8.2/_build/install/default/doc/dune/README.md" "/home/opam/.opam/default/doc/dune/README.md"
--> installed dune.2.8.2
-+ /usr/sbin/cp "-PRp" "/home/opam/.opam/default/.opam-switch/sources/result.1.5" "/home/opam/.opam/default/.opam-switch/build/result.1.5"
-Processing  3/8: [result: dune build]
-+ /home/opam/.opam/default/bin/dune "build" "-p" "result" "-j" "11" (CWD=/home/opam/.opam/default/.opam-switch/build/result.1.5)
--> compiled  result.1.5
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/META" "/home/opam/.opam/default/lib/result/META"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/dune-package" "/home/opam/.opam/default/lib/result/dune-package"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/opam" "/home/opam/.opam/default/lib/result/opam"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.a" "/home/opam/.opam/default/lib/result/result.a"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cma" "/home/opam/.opam/default/lib/result/result.cma"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cmi" "/home/opam/.opam/default/lib/result/result.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cmt" "/home/opam/.opam/default/lib/result/result.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cmx" "/home/opam/.opam/default/lib/result/result.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cmxa" "/home/opam/.opam/default/lib/result/result.cmxa"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.cmxs" "/home/opam/.opam/default/lib/result/result.cmxs"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/lib/result/result.ml" "/home/opam/.opam/default/lib/result/result.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/doc/result/CHANGES.md" "/home/opam/.opam/default/doc/result/CHANGES.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/doc/result/LICENSE.md" "/home/opam/.opam/default/doc/result/LICENSE.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/result.1.5/_build/install/default/doc/result/README.md" "/home/opam/.opam/default/doc/result/README.md"
--> installed result.1.5
-+ /usr/sbin/cp "-PRp" "/home/opam/.opam/default/.opam-switch/sources/csexp.1.3.2" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2"
-Processing  5/8: [csexp: dune build]
-+ /home/opam/.opam/default/bin/dune "build" "-p" "csexp" "-j" "11" "@install" (CWD=/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2)
--> compiled  csexp.1.3.2
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/META" "/home/opam/.opam/default/lib/csexp/META"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.a" "/home/opam/.opam/default/lib/csexp/csexp.a"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cma" "/home/opam/.opam/default/lib/csexp/csexp.cma"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmi" "/home/opam/.opam/default/lib/csexp/csexp.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmt" "/home/opam/.opam/default/lib/csexp/csexp.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmti" "/home/opam/.opam/default/lib/csexp/csexp.cmti"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmx" "/home/opam/.opam/default/lib/csexp/csexp.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmxa" "/home/opam/.opam/default/lib/csexp/csexp.cmxa"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.cmxs" "/home/opam/.opam/default/lib/csexp/csexp.cmxs"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.ml" "/home/opam/.opam/default/lib/csexp/csexp.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/csexp.mli" "/home/opam/.opam/default/lib/csexp/csexp.mli"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/dune-package" "/home/opam/.opam/default/lib/csexp/dune-package"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/lib/csexp/opam" "/home/opam/.opam/default/lib/csexp/opam"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/doc/csexp/CHANGES.md" "/home/opam/.opam/default/doc/csexp/CHANGES.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/doc/csexp/LICENSE.md" "/home/opam/.opam/default/doc/csexp/LICENSE.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/csexp.1.3.2/_build/install/default/doc/csexp/README.md" "/home/opam/.opam/default/doc/csexp/README.md"
--> installed csexp.1.3.2
-+ /usr/sbin/cp "-PRp" "/home/opam/.opam/default/.opam-switch/sources/dune-configurator.2.8.2" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2"
-Processing  7/8: [dune-configurator: dune build]
-+ /home/opam/.opam/default/bin/dune "build" "-p" "dune-configurator" "-j" "11" "@install" (CWD=/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2)
--> compiled  dune-configurator.2.8.2
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Dune_lang.cmi" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Dune_lang.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Dune_lang.cmt" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Dune_lang.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Dune_lang.cmti" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Dune_lang.cmti"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Import.cmi" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Import.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Import.cmt" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Import.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmi" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmt" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmti" "/home/opam/.opam/default/lib/dune-configurator/.private/configurator__Ocaml_config.cmti"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/META" "/home/opam/.opam/default/lib/dune-configurator/META"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.a" "/home/opam/.opam/default/lib/dune-configurator/configurator.a"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cma" "/home/opam/.opam/default/lib/dune-configurator/configurator.cma"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cmi" "/home/opam/.opam/default/lib/dune-configurator/configurator.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cmt" "/home/opam/.opam/default/lib/dune-configurator/configurator.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cmxa" "/home/opam/.opam/default/lib/dune-configurator/configurator.cmxa"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.cmxs" "/home/opam/.opam/default/lib/dune-configurator/configurator.cmxs"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator.ml" "/home/opam/.opam/default/lib/dune-configurator/configurator.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__.cmi" "/home/opam/.opam/default/lib/dune-configurator/configurator__.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__.cmt" "/home/opam/.opam/default/lib/dune-configurator/configurator__.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__.ml" "/home/opam/.opam/default/lib/dune-configurator/configurator__.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Dune_lang.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__Dune_lang.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Extract_obj.cmi" "/home/opam/.opam/default/lib/dune-configurator/configurator__Extract_obj.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Extract_obj.cmt" "/home/opam/.opam/default/lib/dune-configurator/configurator__Extract_obj.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Extract_obj.cmti" "/home/opam/.opam/default/lib/dune-configurator/configurator__Extract_obj.cmti"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Extract_obj.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__Extract_obj.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Import.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__Import.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__Ocaml_config.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__Ocaml_config.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__V1.cmi" "/home/opam/.opam/default/lib/dune-configurator/configurator__V1.cmi"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__V1.cmt" "/home/opam/.opam/default/lib/dune-configurator/configurator__V1.cmt"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__V1.cmti" "/home/opam/.opam/default/lib/dune-configurator/configurator__V1.cmti"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/configurator__V1.cmx" "/home/opam/.opam/default/lib/dune-configurator/configurator__V1.cmx"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/dune-package" "/home/opam/.opam/default/lib/dune-configurator/dune-package"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/dune_lang.ml" "/home/opam/.opam/default/lib/dune-configurator/dune_lang.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/dune_lang.mli" "/home/opam/.opam/default/lib/dune-configurator/dune_lang.mli"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/extract_obj.ml" "/home/opam/.opam/default/lib/dune-configurator/extract_obj.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/extract_obj.mli" "/home/opam/.opam/default/lib/dune-configurator/extract_obj.mli"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/import.ml" "/home/opam/.opam/default/lib/dune-configurator/import.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/ocaml_config.ml" "/home/opam/.opam/default/lib/dune-configurator/ocaml_config.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/ocaml_config.mli" "/home/opam/.opam/default/lib/dune-configurator/ocaml_config.mli"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/opam" "/home/opam/.opam/default/lib/dune-configurator/opam"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/v1.ml" "/home/opam/.opam/default/lib/dune-configurator/v1.ml"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/lib/dune-configurator/v1.mli" "/home/opam/.opam/default/lib/dune-configurator/v1.mli"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/doc/dune-configurator/CHANGES.md" "/home/opam/.opam/default/doc/dune-configurator/CHANGES.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/doc/dune-configurator/LICENSE.md" "/home/opam/.opam/default/doc/dune-configurator/LICENSE.md"
-+ /usr/sbin/install "-m" "0644" "/home/opam/.opam/default/.opam-switch/build/dune-configurator.2.8.2/_build/install/default/doc/dune-configurator/README.md" "/home/opam/.opam/default/doc/dune-configurator/README.md"
--> installed dune-configurator.2.8.2
-Done.
-# Run eval $(opam env) to update the current shell environment
-STEP 8: COMMIT
---> 05ecead5a36
-05ecead5a36d33b5122e7bec948c0941b1bf3ed27a28d8bab991f3efbe4f88ee
++ /usr/sbin/openssl "sha256" "/home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp"
+- /home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp: No such file or directory
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - dune-configurator.2.8.2:
+            opam: "open" failed on /home/opam/.opam/download-cache/sha256/e2/e2c4e8230f7c96236503fd75f22bdbc263639971bf104509e446855ded35ae1e.tmp: No such
+        file or
+            directory
+
+'opam install -vvvy dune-configurator' failed.
+Error: error building at STEP "RUN opam install -vvvy dune-configurator": error while running runtime: exit status 40
