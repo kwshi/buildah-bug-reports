@@ -1,0 +1,12 @@
+# vi: ft=dockerfile
+FROM voidlinux/voidlinux
+
+RUN xbps-install -Suy xbps 
+RUN xbps-install -y base-devel opam
+
+RUN useradd -m opam
+
+USER opam
+
+RUN opam init -ny --disable-sandboxing
+RUN opam install -vvvy dune-configurator
